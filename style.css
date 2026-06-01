@@ -1,0 +1,524 @@
+/* =================================
+   GOOGLE FONT
+================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* =================================
+   ROOT
+================================= */
+
+:root{
+
+    --bg:#030712;
+    --card:rgba(255,255,255,0.05);
+    --border:rgba(255,255,255,0.1);
+
+    --primary:#00d4ff;
+    --secondary:#00ff99;
+
+    --text:#ffffff;
+    --text2:#cbd5e1;
+
+}
+
+/* =================================
+   GLOBAL
+================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    color:white;
+
+    background:
+    linear-gradient(
+        135deg,
+        #020617,
+        #0f172a,
+        #111827
+    );
+
+    min-height:100vh;
+
+    overflow-x:hidden;
+}
+
+/* =================================
+   BACKGROUND EFFECT
+================================= */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    width:500px;
+    height:500px;
+
+    background:#00d4ff;
+
+    filter:blur(250px);
+
+    opacity:.15;
+
+    top:-200px;
+    left:-100px;
+
+    z-index:-1;
+}
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    width:500px;
+    height:500px;
+
+    background:#00ff99;
+
+    filter:blur(250px);
+
+    opacity:.15;
+
+    bottom:-200px;
+    right:-100px;
+
+    z-index:-1;
+}
+
+/* =================================
+   HERO
+================================= */
+
+.hero{
+
+    min-height:80vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px;
+}
+
+.hero-content{
+
+    max-width:900px;
+}
+
+.hero h1{
+
+    font-size:4rem;
+
+    margin-bottom:20px;
+
+    background:
+    linear-gradient(
+        90deg,
+        #00d4ff,
+        #00ff99
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero p{
+
+    font-size:1.2rem;
+
+    color:var(--text2);
+
+    line-height:1.8;
+}
+
+/* =================================
+   NAVBAR
+================================= */
+
+nav{
+
+    position:sticky;
+
+    top:15px;
+
+    width:fit-content;
+
+    margin:auto;
+
+    display:flex;
+
+    gap:15px;
+
+    padding:15px 30px;
+
+    backdrop-filter:blur(20px);
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:50px;
+
+    z-index:999;
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+}
+
+nav a:hover{
+
+    color:#00d4ff;
+}
+
+/* =================================
+   SECTION
+================================= */
+
+section{
+
+    width:90%;
+    max-width:1200px;
+
+    margin:40px auto;
+
+    padding:35px;
+
+    backdrop-filter:blur(20px);
+
+    background:var(--card);
+
+    border:1px solid var(--border);
+
+    border-radius:25px;
+
+    box-shadow:
+    0 0 30px rgba(0,212,255,.08);
+}
+
+section:hover{
+
+    box-shadow:
+    0 0 40px rgba(0,212,255,.15);
+}
+
+section h2{
+
+    margin-bottom:20px;
+
+    color:#00d4ff;
+}
+
+section h3{
+
+    margin-top:20px;
+    margin-bottom:10px;
+
+    color:#00ff99;
+}
+
+/* =================================
+   FORMULA
+================================= */
+
+.formula{
+
+    margin:20px 0;
+
+    padding:20px;
+
+    text-align:center;
+
+    font-size:1.4rem;
+
+    font-weight:700;
+
+    border-radius:15px;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(0,212,255,.15),
+        rgba(0,255,153,.15)
+    );
+
+    border:1px solid rgba(255,255,255,.1);
+
+    transition:.3s;
+}
+
+.formula:hover{
+
+    transform:translateY(-5px);
+}
+
+/* =================================
+   TABLE
+================================= */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+
+    overflow:hidden;
+
+    border-radius:15px;
+}
+
+table th{
+
+    background:#00d4ff;
+
+    color:black;
+
+    padding:15px;
+}
+
+table td{
+
+    padding:12px;
+
+    text-align:center;
+
+    border:1px solid rgba(255,255,255,.08);
+}
+
+table tr:nth-child(even){
+
+    background:rgba(255,255,255,.03);
+}
+
+table tr:hover{
+
+    background:rgba(0,212,255,.08);
+}
+
+/* =================================
+   INPUT
+================================= */
+
+input,
+select{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-top:10px;
+
+    background:rgba(255,255,255,.05);
+
+    color:white;
+
+    border:1px solid rgba(255,255,255,.1);
+
+    border-radius:12px;
+
+    font-size:16px;
+}
+
+input:focus,
+select:focus{
+
+    outline:none;
+
+    border-color:#00d4ff;
+
+    box-shadow:
+    0 0 15px rgba(0,212,255,.4);
+}
+
+/* =================================
+   BUTTON
+================================= */
+
+button{
+
+    width:100%;
+
+    padding:16px;
+
+    margin-top:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    color:white;
+
+    cursor:pointer;
+
+    background:
+    linear-gradient(
+        90deg,
+        #00d4ff,
+        #00ff99
+    );
+
+    transition:.3s;
+}
+
+button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 0 25px rgba(0,212,255,.5);
+}
+
+/* =================================
+   RESULT
+================================= */
+
+#result,
+#steps,
+#evalResult{
+
+    margin-top:20px;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    background:
+    rgba(255,255,255,.04);
+
+    border:
+    1px solid rgba(255,255,255,.08);
+}
+
+/* =================================
+   GRID
+================================= */
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:15px;
+}
+
+/* =================================
+   HISTORY
+================================= */
+
+#historyList{
+
+    list-style:none;
+}
+
+#historyList li{
+
+    padding:15px;
+
+    margin-bottom:12px;
+
+    border-radius:12px;
+
+    background:
+    rgba(255,255,255,.05);
+
+    transition:.3s;
+}
+
+#historyList li:hover{
+
+    transform:translateX(8px);
+
+    border-left:
+    4px solid #00d4ff;
+}
+
+/* =================================
+   FOOTER
+================================= */
+
+footer{
+
+    text-align:center;
+
+    padding:30px;
+
+    color:#94a3b8;
+}
+
+/* =================================
+   SCROLLBAR
+================================= */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:
+    linear-gradient(
+        #00d4ff,
+        #00ff99
+    );
+
+    border-radius:20px;
+}
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    nav{
+
+        flex-wrap:wrap;
+
+        width:90%;
+    }
+
+    section{
+
+        width:95%;
+        padding:20px;
+    }
+
+    table{
+        font-size:12px;
+    }
+}

@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boolean Algebra Solver</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <h1>🧮 Boolean Algebra Solver</h1>
+
+            <p>
+                Website Pembelajaran Interaktif
+                Hukum Distributif dalam Aljabar Boolean.
+                Pelajari teori, lihat tabel kebenaran,
+                dan selesaikan soal secara otomatis.
+            </p>
+
+        </div>
+
+    </header>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <nav>
+
+        <a href="#materi">Materi</a>
+        <a href="#truth">Tabel Kebenaran</a>
+        <a href="#solver">Solver</a>
+        <a href="#history">Riwayat</a>
+
+    </nav>
+
+    <!-- =========================
+         MATERI
+    ========================== -->
+
+    <section id="materi">
+
+        <h2>📚 Hukum Distributif Aljabar Boolean</h2>
+
+        <p>
+            Aljabar Boolean merupakan cabang matematika
+            yang digunakan dalam sistem digital dan
+            ilmu komputer. Berbeda dengan aljabar biasa,
+            Aljabar Boolean hanya mengenal dua nilai
+            yaitu 0 (False) dan 1 (True).
+        </p>
+
+        <p>
+            Aljabar Boolean menjadi dasar dalam
+            perancangan komputer, prosesor,
+            smartphone, mikrokontroler,
+            sistem embedded, IoT, dan berbagai
+            perangkat elektronik modern.
+        </p>
+
+        <h3>Operasi Dasar Boolean</h3>
+
+        <table>
+
+            <tr>
+                <th>Operasi</th>
+                <th>Simbol</th>
+                <th>Keterangan</th>
+            </tr>
+
+            <tr>
+                <td>AND</td>
+                <td>.</td>
+                <td>Perkalian Logika</td>
+            </tr>
+
+            <tr>
+                <td>OR</td>
+                <td>+</td>
+                <td>Penjumlahan Logika</td>
+            </tr>
+
+            <tr>
+                <td>NOT</td>
+                <td>'</td>
+                <td>Negasi</td>
+            </tr>
+
+        </table>
+
+        <h3>Pengertian Hukum Distributif</h3>
+
+        <p>
+            Hukum distributif adalah hukum yang
+            memungkinkan suatu variabel
+            didistribusikan ke dalam sebuah ekspresi.
+            Hukum ini digunakan untuk mengembangkan
+            maupun memfaktorkan fungsi Boolean.
+        </p>
+
+        <p>
+            Hukum distributif sangat penting karena
+            digunakan untuk menyederhanakan
+            rangkaian logika sehingga jumlah
+            gerbang logika yang digunakan menjadi
+            lebih sedikit dan lebih efisien.
+        </p>
+
+        <h3>Hukum Distributif Pertama</h3>
+
+        <div class="formula">
+
+            A(B + C) = AB + AC
+
+        </div>
+
+        <p>
+            Variabel A didistribusikan ke seluruh
+            variabel yang berada di dalam kurung.
+        </p>
+
+        <h4>Contoh:</h4>
+
+        <div class="formula">
+
+            X(Y + Z) = XY + XZ
+
+        </div>
+
+        <h3>Hukum Distributif Kedua</h3>
+
+        <div class="formula">
+
+            A + BC = (A + B)(A + C)
+
+        </div>
+
+        <p>
+            Bentuk ini merupakan salah satu
+            karakteristik unik Aljabar Boolean.
+        </p>
+
+        <h4>Contoh:</h4>
+
+        <div class="formula">
+
+            P + QR = (P + Q)(P + R)
+
+        </div>
+
+        <h3>Manfaat Hukum Distributif</h3>
+
+        <ul>
+
+            <li>Menyederhanakan fungsi Boolean.</li>
+
+            <li>Mengurangi jumlah gerbang logika.</li>
+
+            <li>Meningkatkan efisiensi rangkaian digital.</li>
+
+            <li>Mempermudah analisis sistem logika.</li>
+
+            <li>Menjadi dasar penyederhanaan Karnaugh Map.</li>
+
+        </ul>
+
+        <h3>Penerapan dalam Kehidupan Nyata</h3>
+
+        <p>
+            Hukum distributif digunakan dalam
+            desain prosesor komputer, pembuatan
+            mikrokontroler, sistem keamanan digital,
+            perangkat IoT, hingga kecerdasan buatan.
+        </p>
+
+        <p>
+            Dengan menyederhanakan fungsi Boolean,
+            perangkat keras dapat dibuat lebih cepat,
+            hemat energi, dan lebih murah untuk diproduksi.
+        </p>
+
+    </section>
+
+    <!-- =========================
+         TABEL KEBENARAN
+    ========================== -->
+
+    <section id="truth">
+
+        <h2>📊 Tabel Kebenaran</h2>
+
+        <p>
+            Berikut adalah tabel kebenaran untuk
+            membuktikan bahwa:
+        </p>
+
+        <div class="formula">
+
+            A(B+C) = AB+AC
+
+        </div>
+
+        <table>
+
+            <tr>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>B+C</th>
+                <th>A(B+C)</th>
+                <th>AB</th>
+                <th>AC</th>
+                <th>AB+AC</th>
+            </tr>
+
+            <tr><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>0</td><td>1</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+            <tr><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td></tr>
+            <tr><td>1</td><td>1</td><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>1</td></tr>
+            <tr><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td><td>1</td></tr>
+
+        </table>
+
+    </section>
+
+    <!-- =========================
+         SOLVER
+    ========================== -->
+
+    <section id="solver">
+
+        <h2>⚡ Boolean Solver</h2>
+
+        <p>
+            Masukkan ekspresi hukum distributif.
+        </p>
+
+        <input
+            type="text"
+            id="expression"
+            placeholder="Contoh: A(B+C) atau A+BC"
+        >
+
+        <button onclick="solveBoolean()">
+
+            Sederhanakan
+
+        </button>
+
+        <div id="result"></div>
+
+        <div id="steps"></div>
+
+    </section>
+
+    <!-- =========================
+         EVALUASI NILAI BOOLEAN
+    ========================== -->
+
+    <section>
+
+        <h2>🔢 Evaluasi Nilai Boolean</h2>
+
+        <p>
+            Masukkan nilai A, B, dan C untuk
+            menghitung hasil ekspresi Boolean.
+        </p>
+
+        <div class="grid">
+
+            <div>
+                <label>A</label>
+                <select id="A">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                </select>
+            </div>
+
+            <div>
+                <label>B</label>
+                <select id="B">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                </select>
+            </div>
+
+            <div>
+                <label>C</label>
+                <select id="C">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                </select>
+            </div>
+
+        </div>
+
+        <select id="law">
+
+            <option value="1">
+                A(B+C)
+            </option>
+
+            <option value="2">
+                A+BC
+            </option>
+
+        </select>
+
+        <button onclick="evaluateBoolean()">
+
+            Hitung Nilai
+
+        </button>
+
+        <div id="evalResult"></div>
+
+    </section>
+
+    <!-- =========================
+         HISTORY
+    ========================== -->
+
+    <section id="history">
+
+        <h2>🕒 Riwayat Perhitungan</h2>
+
+        <ul id="historyList"></ul>
+
+    </section>
+
+    <footer>
+
+        <p>
+            Matematika Diskrit • Hukum Distributif Aljabar Boolean
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
